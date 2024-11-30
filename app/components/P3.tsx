@@ -1,6 +1,6 @@
 import React from 'react'
 
-function P3({head, title, bio, desc, btntitle}: string ) {
+function P3(head: string , title: string , bio: string , desc: string , btntitle: string ) {
     return (
       <>
       <div className="flex w-full border-0 border-whit flex-col md:items-start items-center">

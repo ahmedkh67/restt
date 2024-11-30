@@ -4,7 +4,7 @@ import Hero from "./Hero"
 import Moresec from "./Moresec"
 import Historysec from "./Historysec"
 import Distance from "./Distance"
-import P1 from "./P1"
+import P4 from "./P4"
 import Menusec from "./Menusec"
 import Distance2 from "./Distance2"
 import Rates from "./Rates"
@@ -35,7 +35,7 @@ export {
     Moresec,
     Historysec,
     Distance,
-    P1,
+    P4,
     P3,
     Menusec ,
     Distance2,

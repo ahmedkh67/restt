@@ -1,5 +1,5 @@
 import React from 'react'
-import P1 from './P1'
+import P4 from './P4';
 
 //md:py-16
 const Menusec = () => {
@@ -20,7 +20,7 @@ const Menusec = () => {
         </div>
         
       </div>
-      <P1 
+      <P4
       head="read"
       title="Our menu"
       bio="'best foods on a national level'"
