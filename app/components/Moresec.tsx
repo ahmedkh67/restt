@@ -10,7 +10,7 @@ import { morecontent } from '@/app/constants';
 
 
 
-function MoreBox(props: string ) {
+function MoreBox(props: any ) {
 
     return (
         <>
