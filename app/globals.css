@@ -1,0 +1,390 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+* {
+  margin: 0 ;
+  padding: 0 ;
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+@layer components {
+
+.Homepage_background {
+@apply w-full h-screen bg-slate-900 flex justify-center flex-col;
+background-image: url("./images/slider-1.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.Button {
+@apply border-4 border-white p-2 text-3xl md:text-5xl rounded-md hover:bg-white hover:text-black transition-[0.3s];
+}
+
+.Historysec_img {
+  background-image: url("https://restaurant-ingthroughhistory.com/wp-content/uploads/2021/12/paradiseinnpa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @apply w-full h-[350px] border-black md:h-[500px] ;
+}
+.Distancebackground{
+  background-image: url("https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/chef-cooking.jpg?quality=82&strip=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 80%;
+  
+}
+.Dish2 {
+  background-image: url("https://static01.nyt.com/images/2023/12/12/multimedia/12top-dishes-nyc5-zbpk/12top-dishes-nyc5-zbpk-superJumbo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  @apply w-full h-[350px] border-black md:h-[500px] ;
+}
+.Dish3 {
+  background-image: url("https://s3-media0.fl.yelpcdn.com/bphoto/AjCjy0-9QWt_VBal-C16ug/300s.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  @apply w-full h-[350px] border-black md:h-[500px] ;
+}
+.Dish1 {
+  background-image: url("https://i0.wp.com/blog.petpooja.com/wp-content/uploads/2021/10/indian.jpg?resize=696%2C385&ssl=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  @apply w-full h-[350px] border-black md:h-[500px] ;
+}
+
+.Rates_Background {
+  background-image: url("https://matchthemes.com/demohtml/dina/images/top-headers/reservation-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  cursor:default ;
+  
+}
+.teampic1 {
+  background-image: url("https://matchthemes.com/demohtml/dina/images/team/team-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.teampic2 {
+  background-image: url("https://matchthemes.com/demohtml/dina/images/team/team-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+    rotate: 0deg;
+    
+  }
+  10%{
+  }20% {
+    transform: translateX(0px);
+    opacity: 1;
+    
+  }
+  40% {
+    rotate: 5deg;
+
+  }
+
+
+
+}
+
+@keyframes changeh {
+  0% {
+    height: 100rem;
+
+
+  }90% {
+    height: 10rem;
+
+  }
+}
+
+@keyframes changes {
+  0%{
+    transform: scale(0%);
+  }
+  40% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes changes2 {
+  0%{
+    transform: scale(0%);
+  }
+  40% {
+    transform: scale(100%);
+  }
+}
+@keyframes changess {
+  20%{
+    transform: scale(0%);
+    rotate: 40deg;
+  }
+  65% {
+    transform: scale(100%);
+    rotate: 0deg;
+
+  }
+}
+
+@keyframes changesss {
+  10%{
+    transform: scale(0%);
+    rotate: -40deg;
+  }
+  75% {
+    transform: scale(100%);
+    rotate: 0deg;
+  }
+}
+@keyframes changesss2 {
+  10%{
+    transform: scale(0%);
+  
+  }
+  75% {
+    transform: scale(100%);
+    
+  }
+}
+
+@keyframes changeo {
+  0%{
+    opacity: 0;
+  }
+  8%{
+    opacity: 0%;
+  }
+  20%{
+    opacity: 100%;
+}
+}
+@keyframes left {
+  10%{
+    transform: translateX(700px);
+  }
+  80% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes leftt {
+  0%{
+    transform: translateX(-700px);
+    opacity: 0;
+  }
+  5%{
+    opacity: 50%;
+  }
+  10% {
+    transform: translateX(0px);
+    opacity:1 ;
+  }
+}
+
+@keyframes rightt {
+  0%{
+    transform: translateX(700px);
+    opacity: 0;
+  }
+  5%{
+    opacity: 50%;
+  }
+  10% {
+    transform: translateX(0px);
+    opacity:1 ;
+  }
+}
+
+
+.moreCard {
+  animation : fadeout 0.5s forwards ;
+  animation-timeline: scroll();
+
+}
+
+.Distancebackground{
+  animation : changeh 0.5s forwards ;
+  animation-timeline: scroll();
+}
+.Historysec_img {
+  animation : changes 0.5s forwards ;
+  animation-timeline: scroll();
+
+}
+.Dish1,
+.Dish2{
+  animation : changess 0.5s forwards;
+  animation-timeline: scroll() ;
+}
+.Dish3 {
+  animation : changesss 0.5s forwards;
+  animation-timeline: scroll() ;
+}
+
+.privatee {
+  animation : left 0.5s forwards ;
+  animation-timeline: scroll() ;
+}
+.privatee2 {
+  animation : leftt 1s forwards ;
+  animation-timeline: scroll() ;
+}
+
+.P1 {
+  animation : changes 0.5s forwards ;
+  animation-timeline: scroll();
+}
+
+
+
+.Menupage_background {
+  @apply w-full h-screen bg-slate-900 flex justify-center flex-col;
+  background-image: url("./images/slider-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  }
+.MenuCellsContainer {
+  animation : changes 0.5s forwards ;
+  animation-timeline: scroll();
+}
+
+.MenuCellsContainer2 {
+  animation : changesss2 0.5s forwards ;
+  animation-timeline: scroll();
+}
+
+.Menubox1_BackGround {
+  background-image: url("https://burst.shopifycdn.com/photos/breakfast-from-above.jpg?width=1200&format=pjpg&exif=0&iptc=0");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation : changes 0.5s forwards ;
+  animation-timeline: scroll();
+
+  
+}
+
+.Menubox2_BackGround {
+  background-image: url("https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-1640772.jpg&fm=jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation : changes 0.5s forwards ;
+  animation-timeline: scroll();
+
+  
+}
+
+.DMenubox1_BackGround {
+  background-image: url("https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation : left 0.5s forwards ;
+  animation-timeline: scroll();
+
+}
+
+.DMenubox2_BackGround2 {
+  background-image: url("https://t3.ftcdn.net/jpg/02/48/92/96/360_F_248929619_JkVBYroM1rSrshWJemrcjriggudHMUhV.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation : changess 0.5s forwards ;
+  animation-timeline: scroll();
+
+
+  
+}
+
+.Mslide1 {
+  background-image: url("https://t3.ftcdn.net/jpg/02/48/92/96/360_F_248929619_JkVBYroM1rSrshWJemrcjriggudHMUhV.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.Mslide2 {
+  background-image: url("https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.Mslide3 {
+  background-image: url("https://s3-media0.fl.yelpcdn.com/bphoto/AjCjy0-9QWt_VBal-C16ug/300s.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.Mslide4 {
+  background-image: url("https://i0.wp.com/blog.petpooja.com/wp-content/uploads/2021/10/indian.jpg?resize=696%2C385&ssl=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.Opacity_animate {
+  animation : changeo 0.5s forwards ;
+  animation-timeline: scroll() ;
+}
+
+.Slider2 {
+  animation : rightt 0.5s forwards ;
+  animation-timeline: scroll() ;
+}
