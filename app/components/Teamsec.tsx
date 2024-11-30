@@ -1,7 +1,7 @@
 "use client "
 
 import React from 'react'
-import { P3 } from '.';
+import P3 from './P3'
 
 
 
@@ -15,9 +15,6 @@ const Teamsec = () => {
         <P3
             head="Our Team"
             title="Meet our Chefs"
-            bio=' "Welcome to Dina, a modern restaurant with a focus on premium food tastes" '
-            desc="We invite you to celebrate our restaurant's delicious recipes whether you are here for a business lunch or dinner. Discover new tastes and inspired recipes from all over the world"
-           
         />
         {/* putting images instead of divs vv  */}
         <div className="flex w-full justify-evenly md:flex-row flex-col-reverse items-center">
